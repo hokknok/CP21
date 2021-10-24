@@ -1,0 +1,42 @@
+@import 'src/assets/styles/ngc';
+
+.tab-item {
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.tab-button {
+  display: block;
+  width: 100%;
+  padding: 1rem 1rem 1.1rem;
+  text-align: left;
+  line-height: 1;
+  border-radius: 1rem;
+  border: 1px solid $blue;
+  background-color: transparent;
+
+  &__name,
+  &__description {
+    display: block;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+  }
+
+  &.selected {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &:hover {
+    color: $blue;
+    background-color: rgba($blue, 0.1);
+  }
+}

@@ -1,0 +1,8 @@
+<div *ngIf="transportDetectorList.length" class="tab-list">
+  <div *ngFor="let item of transportDetectorList; let idx = index" class="tab-item">
+    <button class="tab-button" [class.selected]="idx === selectedItem" (click)="onSelectedItem(idx)">
+      <span class="tab-button__name" [innerHTML]="item.name"></span>
+      <span class="tab-button__description" [innerHTML]="item.description"></span>
+    </button>
+  </div>
+</div>

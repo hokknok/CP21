@@ -1,0 +1,8 @@
+:root {
+  @each $color, $value in $colors {
+    --color-#{$color}: #{$value};
+  }
+
+  --#{$variable-prefix}body-font-family: 'Commissioner', Arial, Helvetica, sans-serif;
+  --#{$variable-prefix}body-font-size: 2rem;
+}

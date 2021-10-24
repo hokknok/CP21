@@ -1,0 +1,27 @@
+@import 'src/assets/styles/ngc';
+
+.trend-item {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &__arrow {
+    transition: $transition-base;
+    &.up {
+      svg {
+        fill: $green;
+      }
+    }
+
+    &.down {
+      transform: rotate(90deg);
+      svg {
+        fill: $red;
+      }
+    }
+  }
+}

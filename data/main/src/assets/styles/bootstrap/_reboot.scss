@@ -1,0 +1,31 @@
+@import "~bootstrap/scss/reboot";
+
+html {
+  font-size: 0.686342vw; // 100vw / 1440px * 10
+  // font-size: clamp(6.5px, 0.686342vw, 10px);
+}
+
+body {
+  color: var(--color-app__text);
+  background-color: var(--color-app__bg_light);
+}
+
+ol,
+ul,
+dl {
+  margin-bottom: 3rem;
+}
+
+
+@media (min-width: $container-max-width) {
+  html {
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 920px) {
+  html {
+    font-size: 6.5px;
+  }
+}

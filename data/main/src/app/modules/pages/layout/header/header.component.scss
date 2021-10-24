@@ -1,0 +1,110 @@
+@import 'src/assets/styles/ngc';
+
+:host {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.header {
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
+  color: var(--color-app__text);
+  backdrop-filter: blur(10px);
+  background-color: var(--color-gray_10);
+
+  &__logo {
+    margin-top: -1.2rem;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header-menu {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    display: block;
+    color: inherit;
+    line-height: 1;
+    border: 2px solid transparent;
+    background-color: transparent;
+    padding: 0.4rem 1.4rem 0.7rem 1.4rem;
+    border-radius: 4rem;
+
+    &_active {
+      color: var(--color-base__text);
+      background-color: var(--color-base);
+      border-color: var(--color-base);
+      // font-weight: bold;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  color: inherit;
+  font-size: 2.2rem;
+  font-family: 'PT Serif Caption', sans-serif;
+  text-decoration: none;
+  border: none;
+
+  &__icon {
+    margin-right: 0.6em;
+
+    svg {
+      width: auto;
+      height: 5rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 0.28em;
+  }
+
+  &_selected {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+}
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .header {
+    padding: 0;
+
+    &__logo {
+      padding: 1.5rem 0 0 0;
+    }
+
+    &__menu {
+      padding: 1rem 0;
+    }
+
+    &__body {
+      flex-direction: column;
+    }
+  }
+}
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}

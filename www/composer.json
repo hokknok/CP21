@@ -1,0 +1,36 @@
+{
+  "name": "digitalninja/traffic-control",
+  "description": "",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "fidget",
+      "email": "fidget@fidget.ru"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-gd": "*",
+    "ext-json": "*",
+    "ext-libxml": "*",
+    "ext-mbstring": "*",
+    "ext-simplexml": "*",
+    "ext-zip": "*",
+    "guzzlehttp/guzzle": "^7.3",
+    "monolog/monolog": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ninja\\Helper\\": "local/modules/ninja.helper/lib",
+      "Ninja\\Project\\": "local/modules/ninja.project/lib"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "7.4.22"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+$spacer: 3.2rem;
+
+$container-max-width: 1280px;
+$container-padding: $spacer;
+$grid-gutter-width: $spacer;
+$font-family-base: 'Commissioner', Arial, Helvetica, sans-serif;
+
+$font-size-base: 2rem;
+$line-height-base: 1.2;
+
+// Grid
+$grid-gutter-width: 2rem;
+
+$variable-prefix: 'tc-';
+
+$gray: #999999 !default;
+$gray_10: rgba($gray, 0.1) !default;
+$gray_15: rgba($gray, 0.12) !default;
+$gray_20: rgba($gray, 0.2) !default;
+$gray_30: rgba($gray, 0.3) !default;
+$gray_50: rgba($gray, 0.5) !default;
+
+$green: #43a350 !default;
+$red: #df482b !default;
+$orange: #ff9000 !default;
+$purple: #8413f7 !default;
+$yellow: #ffd200 !default;
+$blue: #022f6a !default;
+
+$app__bg: #eeeeee !default;
+$app__bg_light: #ffffff !default;
+$app__text: #000 !default;
+$app__text_80: rgba($app__text, 0.8) !default;
+$app__text_70: rgba($app__text, 0.7) !default;
+$app__text_60: rgba($app__text, 0.6) !default;
+$app__text_50: rgba($app__text, 0.5) !default;
+$app__text_20: rgba($app__text, 0.2) !default;
+
+$layout-block__bg: $app__bg_light;
+
+$base: #3160df !default;
+$base__text: #ffffff !default;
+$base__link: rgba($base__text, 0.8) !default;
+$warning: #db2f18 !default;
+$warning_10: rgba($warning, 0.1) !default;
+$warning_30: rgba($warning, 0.3) !default;
+$warning_40: rgba($warning, 0.4) !default;
+$warning_60: rgba($warning, 0.6) !default;
+$warning_border: rgba($warning, 0.4) !default;
+$success: #58c61b !default;
+$success_60: rgba($success, 0.6) !default;
+$text-link: $base;
+$text-link_border: rgba($base, 0.4) !default;
+
+$calc-res-down__bg: rgba($warning, 0.2) !default;
+$calc-res-down__border: rgba($warning, 0.2) !default;
+$calc-res-up__bg: rgba($success, 0.3) !default;
+$calc-res-up__border: rgba($success, 0.4) !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    'gray': $gray,
+    'gray_10': $gray_10,
+    'gray_15': $gray_15,
+    'gray_20': $gray_20,
+    'gray_30': $gray_30,
+    'gray_50': $gray_50,
+    'red': $red,
+    'green': $green,
+    'orange': $orange,
+    'purple': $purple,
+    'yellow': $yellow,
+    'blue': $blue,
+    'app__bg': $app__bg,
+    'app__bg_light': $app__bg_light,
+    'app__text': $app__text,
+    'app__text_80': $app__text_80,
+    'app__text_70': $app__text_70,
+    'app__text_60': $app__text_60,
+    'app__text_50': $app__text_50,
+    'layout-block__bg': $layout-block__bg,
+    'base': $base,
+    'base__text': $base__text,
+    'base__link': $base__link,
+    'warning': $warning,
+    'warning_10': $warning_10,
+    'warning_30': $warning_30,
+    'warning_40': $warning_40,
+    'warning_60': $warning_60,
+    'warning_border': $warning_border,
+    'success': $success,
+    'success_60': $success_60,
+    'text-link': $text-link,
+    'text-link_border': $text-link_border,
+    'calc-res-down__bg': $calc-res-down__bg,
+    'calc-res-down__border': $calc-res-down__border,
+    'calc-res-up__bg': $calc-res-up__bg,
+    'calc-res-up__border': $calc-res-up__border,
+  ),
+  $colors
+);

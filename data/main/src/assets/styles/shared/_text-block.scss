@@ -1,0 +1,92 @@
+@import "src/assets/styles/ngc";
+
+.text-block {
+  margin-bottom: 1em;
+  border-radius: 2rem;
+  background-color: var(--color-gray_10);
+
+  &__item {
+    padding: 1em 2em;
+
+    &:not(:first-child) {
+      border-top: 1px solid var(--color-gray_20);
+    }
+
+    &.loading {
+      position: relative;
+      height: 20rem;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        background: rgba($app__bg, .7) url('/f/media/ui/preloader.svg') center no-repeat;
+        background-size: 10rem;
+        backdrop-filter: blur(4px);
+      }
+    }
+  }
+}
+
+.text-block-table {
+  width: 100%;
+
+  th, td {
+    padding: .5rem 0;
+
+    &:not(:first-child) {
+      padding-left: 2rem;
+    }
+  }
+
+  th {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: var(--color-gray);
+  }
+}
+
+
+// < 1600px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+  .text-block {
+    border-radius: 1rem;
+
+    &__head {
+      text-align: center;
+    }
+    &__item {
+      padding: 1em;
+    }
+  }
+}
+
+
+@media print {
+}

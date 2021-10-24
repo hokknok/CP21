@@ -1,0 +1,17 @@
+{
+  "/api//*": {
+    "target": "http://traffic-control.digitalninja.ru/",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/f//*": {
+    "target": "http://traffic-control.digitalninja.ru/",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/upload//*": {
+    "target": "http://traffic-control.digitalninja.ru/",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

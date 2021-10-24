@@ -1,0 +1,6 @@
+<div *ngIf="name" class="caption">
+  <div class="container">
+    <div class="caption-name"><h1 [innerHTML]="name"></h1></div>
+    <div *ngIf="desc" class="caption-desc" [innerHTML]="desc"></div>
+  </div>
+</div>

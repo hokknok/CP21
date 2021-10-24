@@ -1,0 +1,62 @@
+@import "src/assets/styles/ngc";
+
+:host {
+  display: block;
+}
+
+.caption {
+  margin: 5rem auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.caption-name {
+  font-size: 5rem;
+  font-weight: 600;
+
+  ::ng-deep {
+    h1 {
+      font-weight: inherit;
+    }
+  }
+}
+
+.caption-desc {
+  margin: 1.4rem auto;
+}
+
+:host-context(.app-page_calc),
+:host-context(.app-page_red),
+:host-context(.app-page_green) {
+  .caption {
+    color: var(--color-base__text);
+  }
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+}
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .caption {
+    margin: 3rem auto;
+    max-width: 100%;
+  }
+
+  .caption-name {
+    font-size: 16px;
+  }
+}
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+  .caption {
+    margin: 2rem auto;
+  }
+}

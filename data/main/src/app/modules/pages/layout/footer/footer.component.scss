@@ -1,0 +1,43 @@
+@import '../../../../../assets/styles/ngc';
+
+.footer {
+  padding: 2rem 0;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: var(--color-gray_10);
+  font-size: 1.6rem;
+
+  &__caption {
+    color: var(--color-app__text_80);
+
+    font-size: 1.8rem;
+
+    b {
+      color: var(--color-app__text);
+    }
+  }
+}
+
+.footer-menu {
+  &__item {
+    display: inline-block;
+
+    margin-left: 1.6rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+:host-context(.app-page:not(.page-loaded)) {
+  .footer {
+    // opacity: 0;
+  }
+}
+
+:host-context(.app-page.page-loaded) {
+  .footer {
+    transition: opacity 0.5s;
+  }
+}

@@ -1,0 +1,13 @@
+.layout-caption {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.app-page_calc,
+.app-page_red,
+.app-page_green {
+  .layout-caption {
+    color: var(--color-base__text);
+  }
+}

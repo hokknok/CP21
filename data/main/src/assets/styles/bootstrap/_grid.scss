@@ -1,0 +1,9 @@
+// Page wide container
+
+@if $enable-grid-classes {
+  .container-wide {
+    @include make-container();
+    max-width: $container-max-width;
+    padding: 0 $container-padding;
+  }
+}

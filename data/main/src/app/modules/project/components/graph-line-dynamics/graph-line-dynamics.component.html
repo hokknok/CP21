@@ -1,0 +1,10 @@
+<ng-container *ngIf="chartOptions">
+  <apx-chart
+    [chart]="chartOptions.chart"
+    [series]="chartOptions.series"
+    [xaxis]="chartOptions.xaxis"
+    [title]="chartOptions.title"
+  ></apx-chart>
+
+  <app-trend-item [status]="trend"></app-trend-item>
+</ng-container>

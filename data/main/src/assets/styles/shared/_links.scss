@@ -1,0 +1,14 @@
+a,
+.link-pseudo {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-text-link);
+  border-bottom: 1px solid var(--color-text-link_border);
+  transition: $transition-base;
+
+  &:hover {
+    text-decoration: none;
+    border-color: var(--color-warning_border);
+    color: var(--color-warning);
+  }
+}

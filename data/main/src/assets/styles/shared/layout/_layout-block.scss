@@ -1,0 +1,18 @@
+@import "../../ngc";
+
+.layout-block {
+  display: block;
+  position: relative;
+  // margin: 0 0 $grid-gutter-width 0;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--color-layout-block__bg);
+  box-shadow: 0 1px 0 0 var(--color-gray_30), 0 0 0 1px var(--color-gray_20);
+}
+
+a.layout-block {
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 0 2rem var(--color-gray_30);
+  }
+}
